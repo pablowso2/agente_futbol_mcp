@@ -10,7 +10,7 @@ load_dotenv()
 # ==========================================
 def _call_mcp(tool_name: str, arguments: dict):
     """Función centralizada para llamar a cualquier endpoint de tu servidor MCP."""
-    url = os.getenv("MCP_URL", "http://localhost:7086/mcp")
+    url = os.getenv("MCP_URL", "http://host.docker.internal:7086/mcp")
     api_key = os.getenv("MCP_API_KEY")
     
     headers = {
