@@ -58,7 +58,7 @@ tools = [
 llm = ChatOllama(
     model="llama3.1:latest",
     temperature=0.2,
-    base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+    base_url=os.getenv("OLLAMA_BASE_URL")
 )
 
 # Enlazamos las herramientas al modelo para que sepa qué puede hacer
