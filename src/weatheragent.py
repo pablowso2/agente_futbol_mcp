@@ -13,8 +13,6 @@ load_dotenv(ruta_env)
 
 # Intentamos sacar la llave del .env, si no la encuentra (None), usamos el string directamente
 WEATHER_API_KEY = os.getenv("WEATHER_API_KEY") or "5355b7ec82b04b8389f155930252404"
-SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID") or "1611585d501f484f8e71ee0f6cd60277"
-SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET") or "d0fb833c48f1447cbbebfb3dcc2594c7"
 
 # Validación estricta para evitar que el programa inicie ciego
 if not WEATHER_API_KEY:
